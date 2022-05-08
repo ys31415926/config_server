@@ -1,0 +1,17 @@
+server:
+  port: 9998
+
+spring:
+  application:
+    name: order-api
+
+
+##将服务注册到eureka中
+eureka:
+  client:
+    service-url:
+      url: http://localhost:8761/eureka
+
+feign:
+  hystrix:
+    enabled: true
